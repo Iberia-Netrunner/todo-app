@@ -25,9 +25,6 @@ function handleAdd() {
   setDraft ("");
 }
 
-{todos.map(function (todo) {
-  return <li key={todo}>{todo}</li>;
-})}
 
 //Todo:Detta skalar inte- behöver loop
   return (
