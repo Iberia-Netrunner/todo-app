@@ -27,7 +27,7 @@ function handleAdd() {
   setTodos([...todos, text]);
   setDraft ("");
 }
-//Använder filter för att splice rör i original arrayen 
+//Använder filter för att splice rör i original state-arrayen den blir immutable (befintlig data ska inte ändra, bara ersättas med ny)
 //medan filter endast filtrerar bort den item man klickat bort
 function handleRemove (textToRemove) {
 const kvar = todos.filter(function (todo) {
